@@ -5,7 +5,7 @@ Uber-Demand-Prediction
 
 ---
 
-## Table of Contents
+## 📌 Table of Contents
 
 * [Project Overview](#project-overview)
 * [Key Highlights](#key-highlights)
@@ -23,13 +23,13 @@ Uber-Demand-Prediction
 
 ---
 
-## Project Overview
+## 🚀 Project Overview
 
 This project develops a predictive system to estimate Uber pickup demand across various zones in **New York City** at 15-minute granularity. It utilizes historical pickup data, spatial clustering with **MiniBatchKMeans**, time-series smoothing, and a **Linear Regression** model to forecast regional demand with high temporal accuracy. The solution is fully automated and production-ready, using **GitHub Actions** for CI/CD and **Blue-Green deployment** via **AWS Auto Scaling Groups**.
 
 ---
 
-## Key Highlights
+## ✨ Key Highlights
 
 * Forecasts Uber pickup demand every **15 minutes** for **dynamically clustered zones** across NYC.
 * Clustering of geo-coordinates using **MiniBatchKMeans** for regional segmentation.
@@ -40,7 +40,7 @@ This project develops a predictive system to estimate Uber pickup demand across 
 
 ---
 
-## Business Objective
+## 🎯 Business Objective
 
 Uber's dynamic marketplace thrives on proactive resource allocation. This project aims to empower Uber with a demand forecasting system that:
 
@@ -51,7 +51,7 @@ Uber's dynamic marketplace thrives on proactive resource allocation. This projec
 
 ---
 
-## Problem Statement
+## ❓ Problem Statement
 
 How can we accurately forecast Uber pickup demand across **multiple NYC sub-regions** at **15-minute intervals**, using historical trends and spatial data? The solution must be:
 
@@ -62,7 +62,7 @@ How can we accurately forecast Uber pickup demand across **multiple NYC sub-regi
 
 ---
 
-## Data Description
+## 🔮 Data Description
 
 * **Source**: Uber pickup data (aggregated historical rides from NYC)
 * **Features**:
@@ -78,7 +78,7 @@ How can we accurately forecast Uber pickup demand across **multiple NYC sub-regi
 
 ---
 
-## Project Architecture
+## 🧠 Project Architecture
 ------------
 
     ├── LICENSE
@@ -134,7 +134,7 @@ How can we accurately forecast Uber pickup demand across **multiple NYC sub-regi
 
 ---
 
-## Modeling Approach
+## ⚙️ Modeling Approach
 
 * **Clustering**: Used **MiniBatchKMeans** to segment NYC into zones with high geographical coherence.
 * **Smoothing**: Applied **EWMA (α = 0.3)** to reduce variance in pickup trends while retaining signal responsiveness.
@@ -143,7 +143,7 @@ How can we accurately forecast Uber pickup demand across **multiple NYC sub-regi
 
 ---
 
-## Model Performance
+## 📊 Model Performance
 
 | Metric      | Value                 |
 | ----------- | --------------------- |
@@ -155,7 +155,7 @@ How can we accurately forecast Uber pickup demand across **multiple NYC sub-regi
 
 ---
 
-## Deployment Strategy
+## 🚀 Deployment Strategy
 
 * **Containerized** the model using **Docker** for cloud-native scalability.
 * Implemented **CI/CD pipeline** via **GitHub Actions** for:
@@ -171,7 +171,7 @@ How can we accurately forecast Uber pickup demand across **multiple NYC sub-regi
 
 ---
 
-## Tech Stack
+## 🧰 Tech Stack
 
 * **Languages**: Python, Bash
 * **ML Libraries**: scikit-learn, pandas, NumPy, matplotlib
@@ -182,7 +182,7 @@ How can we accurately forecast Uber pickup demand across **multiple NYC sub-regi
 
 ---
 
-## Setup Instructions
+## 🛠️ Setup Instructions
 
 ### 1. Clone the repository
 
@@ -220,7 +220,7 @@ Push to `main` branch. GitHub Actions will:
 
 ---
 
-## Potential Improvements
+## 🔮 Potential Improvements
 
 * Replace Linear Regression with **Gradient Boosting** or **Temporal CNNs**
 * Implement **Zone-to-Zone interaction modeling** (spatial spillover effects)
@@ -229,7 +229,7 @@ Push to `main` branch. GitHub Actions will:
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
